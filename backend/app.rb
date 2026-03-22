@@ -25,3 +25,7 @@ post '/empleados' do
   headers 'HX-Trigger' => 'empleadoInsertado'
   '<p>Insertado correctamente.</p>'
 end
+
+get '/' do
+  send_file File.join(settings.public_folder, 'index.html')
+end

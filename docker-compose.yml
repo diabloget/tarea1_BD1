@@ -4,7 +4,7 @@ services:
     container_name: mssql_db
     environment:
       - ACCEPT_EULA=Y
-      - MSSQL_SA_PASSWORD=Password_Pro_2026!
+      - MSSQL_SA_PASSWORD=Bd1tarea!
     ports:
       - "1433:1433"
     volumes:
@@ -21,4 +21,4 @@ services:
       - db
     environment:
       - DB_HOST=db
-      - DB_PASSWORD=Password_Pro_2026!
+      - DB_PASSWORD=Bd1tarea!
