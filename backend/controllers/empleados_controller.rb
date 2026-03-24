@@ -26,7 +26,7 @@ end
 
 # POST /api/empleados 
 # Crea el empleado y notifica al cliente para refrescar la lista
-# empleado/backend/controllers/empleados_controller.rb corregido
+# empleado/backend/controllers/empleados_controller.rb
 post '/api/empleados' do
   nombre  = params['nombre'].to_s.strip
   salario_texto = params['salario'].to_s.strip

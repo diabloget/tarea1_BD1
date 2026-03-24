@@ -10,6 +10,7 @@ class Empleado
 
   # Inserta un empleado y retorna el registro creado.
   def self.crear(nombre:, salario:)
+    # Escapa comillas simples para evitar SQL Injection
     nombre_escapado  = nombre.to_s.strip.gsub("'", "''")
     salario_limpio   = salario.to_f
 
